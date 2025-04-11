@@ -1,16 +1,12 @@
 package com.devsuperior.dscatalog.entities;
 
-import jakarta.persistence.Entity;
-import jakarta.persistence.GeneratedValue;
-import jakarta.persistence.GenerationType;
-import jakarta.persistence.Id;
-import org.springframework.boot.autoconfigure.web.WebProperties;
-
+import jakarta.persistence.*;
 
 import java.io.Serializable;
 import java.util.Objects;
 
 @Entity
+@Table(name = "tb_category")
 public class Category implements Serializable {
 
     private static  final long serialVersionUID = 1L;
