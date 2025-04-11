@@ -14,7 +14,7 @@ public class Category implements Serializable {
     @Id
     @GeneratedValue(strategy = GenerationType.IDENTITY)
     private Long id;
-    private String Name;
+    private String name;
 
     public Category(){
 
@@ -22,7 +22,7 @@ public class Category implements Serializable {
 
     public Category(Long id, String name) {
         this.id = id;
-        Name = name;
+        name = name;
     }
 
     public Long getId() {
@@ -34,11 +34,11 @@ public class Category implements Serializable {
     }
 
     public String getName() {
-        return Name;
+        return name;
     }
 
     public void setName(String name) {
-        Name = name;
+        name = name;
     }
 
     @Override
