@@ -22,7 +22,7 @@ public class Category implements Serializable {
 
     public Category(Long id, String name) {
         this.id = id;
-        name = name;
+        this.name = name;
     }
 
     public Long getId() {
@@ -38,7 +38,7 @@ public class Category implements Serializable {
     }
 
     public void setName(String name) {
-        name = name;
+        this.name = name;
     }
 
     @Override
